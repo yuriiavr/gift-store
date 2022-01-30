@@ -1,0 +1,49 @@
+
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slider-bg);
+}
+
+.title{
+    width: 433px;
+    margin-right: 126px;
+}
+
+.split-title{
+    width: 441px;
+    margin-left: 100px;
+}
+
+.photo{
+    width: 720px;
+    height: 700px;
+}
+
+.thanks{
+    width: 720px;
+    height: 700px;
+}
+
+.banner{
+    @include custom-text (56px, normal, 69px, var(--hero-title-cl));
+    margin-bottom: 36px;
+}
+
+.subtitle{
+    @include custom-text (20px, normal, 28px, var(--hero-subtitle-cl));
+    margin-bottom: 52px;
+}
+
+.split-banner{
+    margin-bottom: 23px;
+    @include custom-text (32px, normal, 45px, var(--hero-title-cl));
+}
+
+.split-subtitle{
+    @include custom-text (20px, normal, 28px, var(--hero-subtitle-cl));
+    margin-bottom: 35px;
+}
+

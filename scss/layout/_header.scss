@@ -1,0 +1,27 @@
+.nav-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav>li{
+    margin-right: 31px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: var(--nav-text-cl);
+    transition-duration: 0.4s;
+
+    &:hover, &:focus{
+        color: var(--hover-nav-cl);
+    }
+}
