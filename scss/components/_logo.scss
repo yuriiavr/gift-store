@@ -1,0 +1,10 @@
+.logo {
+    font-family: 'Homemade Apple';
+    padding-left: 80px;
+    @include custom-text (18px, normal, 39px, var(--logo-cl));
+}
+
+.footer-logo{
+    font-family: 'Homemade Apple';
+    @include custom-text (18px, normal, 39px, var(--footer-logo-cl));
+}

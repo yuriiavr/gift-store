@@ -1,0 +1,73 @@
+// header button
+.gift-finder{
+    padding: 13px 25px;
+    @include custom-text (18px, normal, 22px, var(--button-cl));
+    border: 1px solid var(--button-brd);
+    background: transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        color: var(--hover-button-cl);
+        background: var(--hover-button-bg);
+        border-color: transparent ;
+    }
+}
+
+// slider buttons
+
+.find-gift-now{
+    padding: 23px 25px 23px 25px;
+    @include custom-text (18px, normal, 22px, var(--button-cl));
+    border-radius: 5px;
+    border:1px solid var(--button-brd);
+    background: transparent;
+    cursor: pointer;
+    
+
+    &:hover, &:focus{
+        color: var(--hover-button-cl);
+        background: var(--hover-button-bg);
+        border-color: transparent ;
+    }
+}
+
+.learn-more{
+    padding: 21px 46px;
+    border: 1px solid var(--button-brd);
+    background: transparent;
+    border-radius: 5px;
+    @include custom-text (18px, normal, 24px, var(--button-cl));
+    cursor: pointer;
+
+    &:hover, &:focus{
+        color: var(--hover-button-cl);
+        background: var(--hover-button-bg);
+        border-color: transparent ;
+    }
+}
+
+// CTA buttons
+
+.cta-button-cont{
+    display: flex;
+    list-style: none;
+}
+
+.cta-button{
+    @include custom-text (18px, normal, 24px, var(--cta-button-cl));
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 18px 25px;
+    margin-right: 16px;
+    background: transparent;
+    border: 1px solid var(--cta-button-brd);
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.cta-button:hover{
+    background: var(--hover-cta-button-bg);
+    color: var(--hover-cta-button-cl);
+}
