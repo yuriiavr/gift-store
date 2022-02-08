@@ -1,0 +1,18 @@
+.logo {
+    font-family: 'Homemade Apple';
+    @include custom-text (18px, normal, 39px, var(--logo-cl));
+    padding-left: 40px;
+
+    @media screen and (min-width:768px) {
+        padding-left: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-left: 80px;
+    }
+}
+
+.footer-logo{
+    font-family: 'Homemade Apple';
+    @include custom-text (18px, normal, 39px, var(--footer-logo-cl));
+}
