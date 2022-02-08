@@ -1,0 +1,179 @@
+
+.hero{
+    background-color: var(--slider-bg);
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding-left: 45px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 433px;
+        margin-right: 126px;
+    } 
+}
+
+.split-title{
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 450px;
+        padding-left: 45px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 441px;
+        margin-left: 100px;
+    }  
+}
+
+.photo{
+
+    @media screen and (min-width:480px) {
+        
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 400px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 100%;
+        width: 720px;
+        height: 700px;
+    }  
+}
+
+.thanks{
+    
+    @media screen and (min-width:480px) {
+        
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 435px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 100%;
+        width: 720px;
+        height: 700px;
+    }
+}
+
+.slick-initialized .slick-slide{
+
+    @media screen and (max-width:767px) {
+        display: block;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+    
+
+    
+}
+
+.banner{
+
+    @media screen and (max-width:767px) {
+        padding-top: 20px;
+        padding-right: 15px;
+        text-align: center;
+        @include custom-text (40px, bold, 69px, var(--hero-title-cl));
+    }
+
+    @media screen and (min-width:768px) {
+        @include custom-text (40px, bold, 69px, var(--hero-title-cl));
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:1200px) {
+        @include custom-text (56px, bold, 69px, var(--hero-title-cl));
+        margin-bottom: 36px;
+    }
+
+    
+}
+
+.subtitle{
+
+    @media screen and (max-width:767px) {
+        padding: 0 40px;
+        @include custom-text (15px, normal, 28px, var(--hero-subtitle-cl));
+        padding-bottom: 10px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width:1200px) {
+        @include custom-text (20px, normal, 28px, var(--hero-subtitle-cl));
+        margin-bottom: 52px;
+    }
+    
+}
+
+.split-banner{
+    margin-bottom: 23px;
+    @include custom-text (32px, bold, 45px, var(--hero-title-cl));
+
+    @media screen and (min-width:768px){
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width:1200px){
+        margin-bottom: 23px;
+    }
+}
+
+.split-subtitle{
+
+    @include custom-text (15px, normal, 28px, var(--hero-subtitle-cl));
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 5px;
+
+    @media screen and (min-width:768px) {
+        @include custom-text (15px, normal, 28px, var(--hero-subtitle-cl));
+        padding: 0;
+        margin-bottom: 35px;
+    }
+
+    @media screen and (min-width:1200px) {
+        @include custom-text (20px, normal, 28px, var(--hero-subtitle-cl));
+        margin-bottom: 35px;
+    }
+
+
+}
+

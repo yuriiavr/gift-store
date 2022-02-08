@@ -1,0 +1,39 @@
+.header-cont {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+    
+
+    @media screen and (min-width:768px) {
+        justify-content: space-around;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+}
+
+.nav {
+
+    display: none;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+}
+
+.nav>li{
+    margin-right: 31px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: var(--nav-text-cl);
+    transition-duration: 0.4s;
+
+    &:hover, &:focus{
+        color: var(--hover-nav-cl);
+    }
+}
