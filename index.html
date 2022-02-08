@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+</head>
+<body>
+    
+<header id="header">
+    
+    <div class="container header-cont">
+    
+        <a class="logo" href="">logo</a>
+        <nav>
+            <ul class="nav">
+                <li><a class="nav-button" href="#header">Home</a></li>
+                <li><a class="nav-button" href="#hero">About Us</a></li>
+                <li><a class="nav-button" href="#gift">Services</a></li>
+                <li><a class="nav-button" href="#blog">Blogs</a></li>
+            </ul>
+        </nav>
+        <button class="gift-finder" type="button">gift finder</button> 
+        <button type="button" class="menu-button" data-burger-btn>
+            <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+                <use class="icon-close-menu" href="./images/icons.svg#icon-close-menu"></use>
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="menu" data-menu-container>
+            <button class="gift-finder-menu" type="button">gift finder</button>
+            <ul class="menu__nav">
+                <li><a data-menu-close href="#header">Home</a></li>
+                <li><a data-menu-close href="#hero">About Us</a></li>
+                <li><a data-menu-close href="#gift">Services</a></li>
+                <li><a data-menu-close href="#blog">Blogs</a></li>
+            </ul>
+        </div>
+        
+
+    </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero section -->
+
+        <section class="hero" id="hero">
+            <div class="slider">
+                <div class="slide">
+                    <div class="title"><h1 class="banner">Find a gift for your wife or girlfriend</h1>
+                    <p class="subtitle">Struggling to find a gift for your wife or girlfriend? No problem!</p>
+                    <button class="find-gift-now" type="button">Find gift now</button></div>
+                    <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/herophotom.jpg">
+                        <source media='(min-width: 768px)'  srcset="./images/herophototb.jpg">
+                        <source media='(min-width: 320px)'  srcset="./images/herophoto.jpg">
+                        <img class="photo" src="./images/herophoto.jpg" alt="photo" >
+                    </picture>
+                    
+                </div>
+                <div class="slide">
+                    <picture>
+                        <source media='(min-width: 1200px)' srcset="./images/splitphotom.jpg">
+                        <source media='(min-width: 768px)'  srcset="./images/splitphototb.jpg">
+                        <source media='(min-width: 320px)'  srcset="./images/splitphoto.jpg">
+                        <img class="thanks" src="./images/splitphoto.jpg" alt="Thanks!">
+                    </picture>
+                    <div class="split-title"><h2 class="split-banner">How we work</h2>
+                    <p class="split-subtitle">We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
+                    <button class="learn-more" type="button">Learn More</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gifts card section -->
+
+        <section class="section" id="gift">
+            <div class="container">
+                <h2 class="section-title">Gifts for all Occasions</h2>
+                <p class="section-subtitle">“Try our web app to find the best gifts for all occasions”</p>
+                <ul class="cards-section">
+                    <li>
+                        <img src="./images/birthday.jpg" alt="Birthday Photo">
+                        <div class="card-description-cont"><h3 class="card-title">Birthday</h3>
+                        <a class="see-more" href="">See More ›</a></div>
+                    </li>
+                    <li>
+                        <img src="./images/anniversary.jpg" alt="Anniversary Photo">
+                        <div class="card-description-cont"><h3 class="card-title">Anniversary</h3>
+                        <a class="see-more" href="">See More ›</a></div>
+                    </li>
+                    <li>
+                        <img src="./images/valentineday.jpg" alt="St. Valentine`s Day Photo">
+                        <div class="card-description-cont"><h3 class="card-title">Valentine's Day</h3>
+                        <a class="see-more" href="">See More ›</a></div>
+                    </li>
+                    <li>
+                        <img src="./images/christmas.jpg" alt="Christams Photo">
+                        <div class="card-description-cont"><h3 class="card-title">Christmas</h3>
+                        <a class="see-more" href="">See More ›</a></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CTA section -->
+
+        <section id="cta">
+            <div class="cta-display">
+                <ul class="cta-cont">
+                    <li>
+                        <b><h4 class="cta-title"><b>Ready to get started?</b></h4></b>
+                    </li>
+                    <li>
+                        <h4 class="cta-title">Sign up or contact us</h4>
+                    </li>
+                </ul>
+
+                <ul class="cta-button-cont">
+                    <li><button class="cta-button" type="button">Find gift now</button></li>
+                    <li><button class="cta-button" type="button">how it works</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our blogs section -->
+
+        <section class="section" id="blog">
+            <div class="blog-section">
+                <h2 class="section-title">Our Best Blogs Ever</h2>
+                <p class="section-subtitle">“Try our blog to find the best tips and tricks to select your gift”</p>
+                <div class="blog-cont">
+                    <div><img class="blog-photo" src="./images/blogcard.jpg" alt="Blog Photo"></div>
+                    <div class="subtitle-cont"><p class="blog-name">Mr. John Doe</p>
+                    <h5 class="blog-title">The best way to wish your wife</h5>
+                    <a class="read-more" href="">Read More</a></div>
+                </div>
+                <ul class="blog-cards">
+                    <li>
+                        <span class="blog-crads-title"><b>Database to find the gifts for your <br> girlfriend</b></span>
+                        <p class="blog-cards-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <a class="blog-cards-read-more" href="">Read More</a>
+                    </li>
+                    <li>
+                        <span class="blog-crads-title"><b>How Artificial Intelligence read your mind to find the best gift</b></span>
+                        <p class="blog-cards-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <a class="blog-cards-read-more" href="">Read More</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-cont">
+            <div class="footer-nav">
+                <ul class="left-nav">
+                    <li><a class="footer-nav" href="#header">Home</a></li>
+                    <li><a class="footer-nav" href="#hero">About</a></li>
+                </ul>
+                <a class="footer-logo" href="">logo</a>
+                <ul class="right-nav">
+                    <li><a class="footer-nav" href="#gift">Service</a></li>
+                    <li><a class="footer-nav" href="blog">Blog</a></li>
+                </ul>
+            </div>
+        <div class="social-network-cont">
+            <ul class="social-network-ul">
+                <li class="social-network-icon">
+                    <a href=""><svg><use href="images/icons.svg#icon-facebook" width="38"></use></svg></a>
+                </li>
+                <li class="social-network-icon">
+                    <a href=""><svg><use href="images/icons.svg#icon-twitter" width="38"></use></svg></a>
+                </li>
+                <li class="social-network-icon">
+                    <a href=""><svg><use href="images/icons.svg#icon-instagram" width="38"></use></svg></a>
+                </li>
+                <li class="social-network-icon">
+                    <a href=""><svg><use href="images/icons.svg#icon-youtube" width="38"></use></svg></a>
+                </li>
+                <li class="social-network-icon">
+                    <a href=""><svg><use href="images/icons.svg#icon-hzsho" width="38"></use></svg></a>
+                </li>
+            </ul>
+        </div>
+        <div class="copy-right">
+            <span>© 2010 — 2020</span>
+            <span>Privacy — Terms</span>
+        </div>
+    </div>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
+
+</body>
+</html>
